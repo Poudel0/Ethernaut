@@ -20,3 +20,6 @@ contract Token {
         return balances[_owner];
     }
 }
+// This is an underflow/ overflow hack
+// Use the transfer() function to transfer token more than 20 tokens to any account. The odometer gets reset ko 2^256 - (>20) token
+// :)
